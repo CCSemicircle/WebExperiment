@@ -1,0 +1,72 @@
+.mainContainer {
+  width: 400px;
+  height: auto;
+  margin: 200px auto;
+}
+
+.computer {
+  width: auto;
+  height: auto;
+}
+
+.row {
+  width: auto;
+  height: auto;
+}
+
+#inputBar {
+  font-size: 10px;
+  width: 310px;
+  height: 30px;
+  text-align: end;
+  align-content: flex-end;
+  vertical-align: bottom;
+}
+
+#pastInputBar {
+  font-size: 20px;
+  width: 310px;
+  height: 70px;
+  align-content: flex-end;
+  vertical-align: bottom;
+  text-align: end;
+  resize: none;
+}
+
+.btn {
+  width: 60px;
+  height: 40px;
+}
+
+.input {
+  background-color: white;
+  font-weight: bolder;
+}
+
+.btn:hover {
+  background-color: gray;
+}
+
+.input:hover {
+  background-color: gray;
+}
+
+.input:active {
+  background-color: dimgray;
+}
+
+.btn:active {
+  background-color: dimgray;
+}
+
+#compute {
+  background-color: rgb(96, 121, 175);
+}
+
+#compute:hover {
+  background-color: rgb(51, 96, 192);
+}
+
+#compute:active {
+  background-color: rgb(10, 87, 252);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>网页时钟</title>
+    <link rel="stylesheet" type="text/css" href="webClock.css" />
+  </head>
+  <body>
+    <div id="circle">
+      <div id="smallCircle"></div>
+      <div class="number">
+        <p>12</p>
+        <p style="margin-top: 390px">6</p>
+      </div>
+      <div class="number" style="transform: rotate(30deg)">
+        <p style="transform: rotate(-30deg)">1</p>
+        <p style="margin-top: 390px; transform: rotate(-30deg)">7</p>
+      </div>
+      <div class="number" style="transform: rotate(60deg)">
+        <p style="transform: rotate(-60deg)">2</p>
+        <p style="margin-top: 390px; transform: rotate(-60deg)">8</p>
+      </div>
+      <div class="number" style="transform: rotate(90deg)">
+        <p style="transform: rotate(-90deg)">3</p>
+        <p style="margin-top: 390px; transform: rotate(-90deg)">9</p>
+      </div>
+      <div class="number" style="transform: rotate(120deg)">
+        <p style="transform: rotate(-120deg)">4</p>
+        <p style="margin-top: 390px; transform: rotate(-120deg)">10</p>
+      </div>
+      <div class="number" style="transform: rotate(150deg)">
+        <p style="transform: rotate(-150deg)">5</p>
+        <p style="margin-top: 395px; transform: rotate(-150deg)">11</p>
+      </div>
+      <div id="hourPoint">
+        <div></div>
+      </div>
+      <div id="minutePoint">
+        <div></div>
+      </div>
+      <div id="secondPoint">
+        <div></div>
+      </div>
+      <div id="centerPoint"></div>
+    </div>
+    <div class="textDate">
+      <div id="time"></div>
+      <div id="date"></div>
+    </div>
+  </body>
+  <script type="text/javascript" src="webClock.js"></script>
+</html>

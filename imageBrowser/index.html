@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="imageBrowser.css" />
+    <title>图片浏览器</title>
+  </head>
+  <body>
+    <img
+      class="icon"
+      id="left-arrow"
+      src="resources/icons/leftArrow.png"
+      onclick="getPrevious()"
+    />
+    <div class="browser">
+      <img id="image" src="" />
+    </div>
+    <img
+      class="icon"
+      id="right-arrow"
+      src="resources/icons/rightArrow.png"
+      onclick="getNext()"
+    />
+    <div id="thumbnail"></div>
+    <script type="text/javascript" src="imageBrowser.js"></script>
+  </body>
+</html>

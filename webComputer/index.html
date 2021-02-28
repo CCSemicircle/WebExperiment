@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="webComputer.css" />
+    <title>网页计算器</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <table class="computer">
+        <thead>
+          <tr class="row">
+            <th colspan="5">网页计算器</th>
+          </tr>
+          <tr class="row">
+            <td colspan="5" class="btn">
+              <textarea id="pastInputBar" disabled></textarea>
+            </td>
+          </tr>
+          <tr class="row">
+            <td colspan="5" class="btn">
+              <input type="text" value="0" id="inputBar" disabled />
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row">
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="⬆"
+                onclick="getLastInput()"
+              />
+            </td>
+            <td>
+              <input class="btn" type="button" value="π" onclick="getPai()" />
+            </td>
+            <td>
+              <input class="btn" type="button" value="e" onclick="getE()" />
+            </td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="CE"
+                onclick="clearInput()"
+              />
+            </td>
+            <td>
+              <input class="btn" type="button" value="⬅" onclick="back()" />
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <input class="btn" type="button" value="x^2" onclick="square()" />
+            </td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="1/x"
+                onclick="reciprocal()"
+              />
+            </td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="|x|"
+                onclick="absoluteInput()"
+              />
+            </td>
+            <td>
+              <input class="btn" type="button" value="exp" onclick="expByE()" />
+            </td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="%"
+                onclick="twoFactorOperation(this)"
+              />
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <input class="btn" type="button" value="√x" onclick="radical()" />
+            </td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="("
+                onclick="getLeftBracket()"
+              />
+            </td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value=")"
+                onclick="getRightBracket()"
+              />
+            </td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="n!"
+                onclick="factorial()"
+              />
+            </td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="/"
+                onclick="twoFactorOperation(this)"
+              />
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="x^y"
+                onclick="twoFactorOperation(this)"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="7"
+                onclick="setNumber(this)"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="8"
+                onclick="setNumber(this)"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="9"
+                onclick="setNumber(this)"
+              />
+            </td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="*"
+                onclick="twoFactorOperation(this)"
+              />
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="10^x"
+                onclick="expByTen()"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="4"
+                onclick="setNumber(this)"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="5"
+                onclick="setNumber(this)"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="6"
+                onclick="setNumber(this)"
+              />
+            </td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="-"
+                onclick="twoFactorOperation(this)"
+              />
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="log"
+                onclick="logarithm()"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="1"
+                onclick="setNumber(this)"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="2"
+                onclick="setNumber(this)"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="3"
+                onclick="setNumber(this)"
+              />
+            </td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="+"
+                onclick="twoFactorOperation(this)"
+              />
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <input
+                class="btn"
+                type="button"
+                value="ln"
+                onclick="logarithmByE()"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="+/-"
+                onclick="opposite()"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="0"
+                onclick="setNumber(this)"
+              />
+            </td>
+            <td>
+              <input
+                class="btn input"
+                type="button"
+                value="."
+                onclick="getDot()"
+              />
+            </td>
+            <td>
+              <input
+                class="btn"
+                id="compute"
+                type="button"
+                value="="
+                onclick="getAnswer()"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script type="text/javascript" src="webComputer.js"></script>
+</html>
